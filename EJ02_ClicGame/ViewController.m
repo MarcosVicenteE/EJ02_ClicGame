@@ -14,8 +14,9 @@
 //prpeperties del juego
 @property NSInteger tiempo;
 @property NSInteger puntuacion;
-
 //properties de audio
+//property de temporizador
+@property NSTimer* timerTiempo;
 @end
 
 @implementation ViewController
@@ -26,6 +27,7 @@
     UIImage* miFondo = [UIImage imageNamed:@"fondo"];
     UIColor* miColorDeFondo =  [UIColor colorWithPatternImage:miFondo];
     [[self view]setBackgroundColor:miColorDeFondo];
+    [self initialize];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,5 +38,18 @@
     _puntuacion ++;
     [_labelPuntuacion setText:[NSString stringWithFormat:@"PUNTUACION , %ld",_puntuacion]];
 }
-
+-(void)initialize{
+    _tiempo = 30;
+    _puntuacion = 0 ;
+    
+    //temporizador
+    _timerTiempo =[ NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(RestarTiempo) userInfo:nil repeats:YES];
+}
+-(void)RestarTiempo{
+    _tiempo--;
+   // [_labelTiempo setText:_tiempo];
+    if(_tiempo == 0){
+        
+    }
+}
 @end
