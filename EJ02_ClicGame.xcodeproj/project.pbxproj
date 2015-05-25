@@ -14,6 +14,7 @@
 		966B255E1B13910A00F3E1DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966B255D1B13910A00F3E1DE /* Images.xcassets */; };
 		966B25611B13910A00F3E1DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966B255F1B13910A00F3E1DE /* LaunchScreen.xib */; };
 		966B256D1B13910A00F3E1DE /* EJ02_ClicGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B256C1B13910A00F3E1DE /* EJ02_ClicGameTests.m */; };
+		966B25771B13914800F3E1DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B25761B13914800F3E1DE /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		966B25661B13910A00F3E1DE /* EJ02_ClicGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EJ02_ClicGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966B256B1B13910A00F3E1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966B256C1B13910A00F3E1DE /* EJ02_ClicGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJ02_ClicGameTests.m; sourceTree = "<group>"; };
+		966B25761B13914800F3E1DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966B25771B13914800F3E1DE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		966B25441B13910A00F3E1DE = {
 			isa = PBXGroup;
 			children = (
+				966B25761B13914800F3E1DE /* AVFoundation.framework */,
 				966B254F1B13910A00F3E1DE /* EJ02_ClicGame */,
 				966B25691B13910A00F3E1DE /* EJ02_ClicGameTests */,
 				966B254E1B13910A00F3E1DE /* Products */,
